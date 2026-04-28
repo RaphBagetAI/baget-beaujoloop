@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BeaujoLoop - Vintage Scooter Concierge in Beaujolais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter&display=swap" rel="stylesheet" />
+    <style>
+      /* Reset and base styles */
+      body, html {
+        margin: 0; padding: 0; height: 100%; background-color: #0D0D0D;
+        color: #F5F0E8;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        font-size: 18px;
+      }
+      h1, h2, h3 {
+        font-family: 'Cormorant Garamond', serif;
+        color: #F5F0E8;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+      }
+      a {
+        color: #B8956A;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+      .hero {
+        background: url('images/a-restored-vintage-vespa-px-in-pale-gold.png') no-repeat center center / cover;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+        box-shadow: inset 0 0 150px 60px rgba(13, 13, 13, 0.9);
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+        max-width: 650px;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      .hero p {
+        font-size: 1.25rem;
+        max-width: 500px;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        color: #d9cfa6;
+      }
+      .btn-primary {
+        background-color: #B8956A;
+        color: #0D0D0D;
+        border: none;
+        padding: 0.9rem 2rem;
+        font-weight: 700;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+      }
+      .btn-primary:hover {
+        box-shadow: 0 0 30px rgba(184, 149, 106, 0.3);
+      }
+      section {
+        padding: 3rem 0;
+        border-bottom: 1px solid #1A1A1A;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+      .card {
+        background-color: #1A1A1A;
+        border-radius: 2px;
+        padding: 1.5rem;
+        box-shadow: none;
+        transition: box-shadow 0.3s ease;
+      }
+      .card:hover {
+        box-shadow: 0 0 30px rgba(184, 149, 106, 0.1);
+      }
+      .card h3 {
+        margin-top: 0;
+        font-weight: 700;
+      }
+      .highlight {
+        color: #B8956A;
+        font-weight: 700;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      input[type="email"], input[type="text"] {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        border: none;
+        font-size: 1rem;
+      }
+      input[type="submit"] {
+        background-color: #B8956A;
+        color: #0D0D0D;
+        border: none;
+        padding: 0.9rem 2rem;
+        font-weight: 700;
+        border-radius: 2px;
+        cursor: pointer;
+        width: 100%;
+        transition: box-shadow 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        box-shadow: 0 0 30px rgba(184, 149, 106, 0.3);
+      }
+      .footer {
+        text-align: center;
+        padding: 1.5rem 1rem;
+        font-size: 0.875rem;
+        color: #787878;
+      }
+      @media (max-width: 600px) {
+        .hero h1 {
+          font-size: 2.25rem;
+        }
+      }
+    </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>BeaujoLoop: Vintage Vespas, Timeless Vineyards</h1>
+    <p>Explore Beaujolais on beautifully restored 125cc scooters with curated routes and concierge support.</p>
+    <button class="btn-primary" onclick="document.getElementById('waitlist-form').scrollIntoView({behavior:'smooth'});">Reserve Your Weekend</button>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="experience-title">
+      <h2 id="experience-title">The BeaujoLoop Experience</h2>
+      <p>BeaujoLoop provides a premium vintage scooter concierge service, removing the logistical barriers so you can savor the romance of Beaujolais. Our service includes luggage transfers, GPS-guided routes through scenic D-roads, and VIP winery tastings—all with a fleet of fully restored Italian Vespas in our signature Beaujolais pastel colors.</p>
+    </section>
+
+    <section aria-labelledby="fleet-routes-title">
+      <h2 id="fleet-routes-title">Our Fleet & Curated Riding Loops</h2>
+      <div class="grid-3">
+        <article class="card" aria-label="Pale Gold Vespa">
+          <h3>Pale Gold Vespa PX</h3>
+          <p>Classic 125cc Vespa PX in soft Pale Gold, meticulously restored for smooth scenic touring.</p>
+        </article>
+        <article class="card" aria-label="Gamay Red Vespa">
+          <h3>Gamay Red Vespa Sprint</h3>
+          <p>Vespa Sprint in rich Gamay Red, delivering vintage charm with modern reliability.</p>
+        </article>
+        <article class="card" aria-label="Sage Green Vespa">
+          <h3>Sage Green Vespa PX</h3>
+          <p>Fresh Sage Green PX, perfect for immersive journeys through rolling vineyards.</p>
+        </article>
+      </div>
+      <div style="margin-top: 2rem;" aria-label="Curated Weekend Loops">
+        <h3>Featured Weekend Loops</h3>
+        <ul style="list-style-type:none; padding-left:0;">
+          <li><strong>Pierres Dorées Loop:</strong> Explore the Golden Stones and pastoral villages on tranquil backroads.</li>
+          <li><strong>10 Crus Loop:</strong> Circle through Morgon, Fleurie, and other famed Beaujolais crus with VIP tastings.</li>
+          <li><strong>Beaujeu Classic:</strong> Vintage roads and hidden gems culminating in a private vineyard picnic.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="packages-title">
+      <h2 id="packages-title">Packages & Pricing</h2>
+      <div class="grid-3">
+        <article class="card" aria-label="The Solo Loop Package">
+          <h3>The Solo Loop</h3>
+          <p><span class="highlight">€350 (2 Days)</span></p>
+          <p>Vintage 125cc scooter, GPS pre-loaded routes, 1 VIP winery tasting, and roadside support.</p>
+        </article>
+        <article class="card" aria-label="The Concierge Weekend Package">
+          <h3>The Concierge Weekend</h3>
+          <p><span class="highlight">€850 (2 Days, 2 Scooters)</span></p>
+          <p>Hotel-to-hotel luggage transfer, curated vigneron’s picnic, itinerary assistance, and concierge support.</p>
+        </article>
+        <article class="card" aria-label="The Cru Collection Package">
+          <h3>The Cru Collection</h3>
+          <p><span class="highlight">€1,200 (2 Days, 4-6 Pax)</span></p>
+          <p>Full concierge, 4 scooters, luggage van support, and multi-winery VIP bookings.</p>
+        </article>
+      </div>
+      <div style="margin-top: 2rem;">
+        <h3>Add-ons</h3>
+        <ul>
+          <li>The Terroir Basket (€85): Local delicacies in a bespoke wicker basket.</li>
+          <li>Premium Gear Rental (€45): Leather helmets and designer goggles.</li>
+          <li>Extended Roadside Concierge (€120): 24/7 mechanical support.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="waitlist-title">
+      <h2 id="waitlist-title">Join Our Waitlist</h2>
+      <p>Be the first to reserve your vintage Vespa weekend loop. Enter your details below to secure priority access.</p>
+
+      <form id="waitlist-form" method="POST" action="https://app.baget.ai/api/public/databases/e9fef879-4324-4adc-8255-0a93eedafc6b/rows" onsubmit="return waitlistSubmit(event)">
+        <input type="text" name="name" placeholder="Your name" aria-label="Name" required />
+        <input type="email" name="email" placeholder="Your email" aria-label="Email" required />
+        <input type="submit" value="Join Waitlist" aria-label="Join the waitlist" />
+      </form>
+      <p id="form-status" role="alert" style="margin-top: 1rem;"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 BeaujoLoop. All rights reserved.</p>
+  </footer>
+
+  <script>
+    async function waitlistSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const status = document.getElementById('form-status');
+      status.textContent = '';
+      const data = {
+        data: {
+          name: form.name.value.trim(),
+          email: form.email.value.trim(),
+        }
+      };
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+        if (response.ok) {
+          status.style.color = '#B8956A';
+          status.textContent = 'Thanks — we\'ll be in touch soon!';
+          form.reset();
+        } else {
+          throw new Error('Failed to submit');
+        }
+      } catch (error) {
+        status.style.color = '#E87C7C';
+        status.textContent = 'Oops! Something went wrong. Please try again.';
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
